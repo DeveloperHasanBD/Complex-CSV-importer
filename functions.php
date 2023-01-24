@@ -1,4 +1,16 @@
+<h4>Upload Brand CSV </h4>
 <?php
+brand_csv_import_processing();
+?>
+<form id="brand_csv_file_importer" enctype='multipart/form-data' action='' method='post'>
+    <input class="form-control" type='file' name='brand_csv_file'>
+    <input class="form-control mt-4 btn btn-info" type="submit" value="Upload Brand CSV" name="brand_csv_submit_btn">
+</form>
+
+
+
+<?php
+
 function brand_csv_import_processing()
 {
 
